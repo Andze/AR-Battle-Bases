@@ -16,7 +16,7 @@ public class Base_Health : MonoBehaviour {
         CurrentHealth = new GameObject[Health];        
         for (int i = 0; i < Health; i++)
         {
-            CurrentHealth[i] = Instantiate(HealthBar, new Vector3(((this.transform.position.x - (BarSpacing * (Health-1) /2)) + (BarSpacing*i)),0.75f,this.transform.position.z), Quaternion.identity, this.transform);
+            CurrentHealth[i] = Instantiate(HealthBar, new Vector3(((this.transform.position.x - (BarSpacing * (Health-1) /2)) + (BarSpacing*i)),10f,this.transform.position.z), Quaternion.identity, this.transform);
         }
 	}
 
@@ -26,6 +26,8 @@ public class Base_Health : MonoBehaviour {
 
         if (Health < 0)
             PlayerDead();
+
+        //fix if health goes over intial
         
         for (int i = 0; i < CurrentHealth.Length; i++)
         {
