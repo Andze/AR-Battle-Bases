@@ -44,7 +44,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/3-VuMark.unity
     guid: d9b53b25a285640cf8ac170a80603e34
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BattleBunniesMain.unity
     guid: e8bdf3c41f684ed40ab23cb1803f067c
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 05c3ef6386db4c04e83175d4de08355e
   m_configObjects: {}
